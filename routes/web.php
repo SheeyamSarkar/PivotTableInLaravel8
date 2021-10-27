@@ -24,3 +24,7 @@ Route::get('/', function () {
 //pivotproduct
 Route::get('/product',[ProductController::class,'index']);
 Route::post('/addproduct', [ProductController::class, 'addproduct']);
+Route::post('/viewproduct', [ProductController::class, 'viewproduct']);
+Route::post('/editproduct', [ProductController::class, 'editproduct']);
+Route::post('/updateproduct', [ProductController::class, 'updateproduct']);
+Route::post('/deleteproduct', [ProductController::class, 'deleteproduct']);
